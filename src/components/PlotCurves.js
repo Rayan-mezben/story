@@ -11,18 +11,18 @@ export class PlotCurves extends Component {
 
   render() {
     return (
-      <div className="col-5">
+      <div className="col-auto">
         <Plot
           data={[
             {
-              x: [1, 2, 3],
-              y: [2, 6, 3],
+              x: [1, 2, 3, 4],
+              y: [2, 6, 3, 4],
               type: "scatter",
               mode: "lines+markers",
               marker: { color: "red" },
             },
           ]}
-          layout={{ title:  this.props.title}}
+          layout={{ title: this.props.title}}
         />
       </div>
     );
