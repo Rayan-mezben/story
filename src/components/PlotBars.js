@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Plot from "react-plotly.js";
 
-export class PlotCurves extends Component {
+export class PlotBars extends Component {
   
   // eslint-disable-next-line no-useless-constructor
   constructor(props) {
@@ -17,17 +17,25 @@ export class PlotCurves extends Component {
             {
               x: this.props.x,
               y:  this.props.y,
-              type: "scatter",
+              type: "bar",
               mode: "lines+markers",
               marker: { color: "#00557d" },
             },
+            {
+                x: this.props.x,
+                y:  this.props.y,
+                type: "bar",
+                mode: "lines+markers",
+                marker: { color: "#00727d" },
+              },
           ]}
-          //TO DO 
-          layout={{ title: this.props.title}} 
-          config={{setBackground:"opaque"}}
+          //TODO
+          layout={{ title: this.props.title, width:600, height: 600} }
+          config={{edits: {legendPosition:true}}} // moveable legend
         />
       </div>
     );
   }
 }
-export default PlotCurves;
+
+export default PlotBars;
