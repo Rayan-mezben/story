@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import Plot from "react-plotly.js";
-
 export class Plotgauge extends Component {
   
   // eslint-disable-next-line no-useless-constructor
