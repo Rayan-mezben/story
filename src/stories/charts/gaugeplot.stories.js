@@ -12,7 +12,6 @@ export const first_cas = {
     val: [330,450,120],
     sh:"angular",
     titre: "gauge",
-
   },
 };
 
