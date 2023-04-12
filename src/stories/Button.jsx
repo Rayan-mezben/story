@@ -1,13 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './button.css';
+import { Container } from './container';
 
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+const But = ({ primary, backgroundColor, size, label, ...props }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
+  
     <button
       type="button"
       className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
@@ -16,8 +18,16 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
     >
       {label}
     </button>
+  
+
   );
 };
+export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
+<Container>
+  but(primary, backgroundColor , size , label);
+</Container>
+}
+
 
 Button.propTypes = {
   /**

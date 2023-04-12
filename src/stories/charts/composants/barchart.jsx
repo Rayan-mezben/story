@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
 import Plot from "react-plotly.js";
 import PropTypes from 'prop-types';
+import { Container } from '../../container';
 
 
 
 export const barchart = ({ xx, yy, titre}) => {
 
         return (
-          <div className="col-auto">
-            <Plot
+          <Container>
+    
+   <div className="col-auto">
+      <Plot
               data={[
                 {
                   x: xx,
@@ -29,7 +32,9 @@ export const barchart = ({ xx, yy, titre}) => {
               layout={{ title: titre, width:400, height: 550} }
               config={{edits: {legendPosition:true}}} // moveable legend
             />
-          </div>
+               </div>
+        </Container>
+       
         );
             }    
 

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 
 
-export const scatterplot = ({ xx, yy, titre}) => {
+export const bubblechart = ({ xx, yy, titre,taille}) => {
 
     return (
     <div className="col-auto">
@@ -15,7 +15,7 @@ export const scatterplot = ({ xx, yy, titre}) => {
             y: yy,
             type: "scatter",
             mode: "markers",
-            marker: { color: ["green","blue","red"] , size:yy },
+            marker: { color: "#00557d"  , size : taille},
             
           },
         ]}
@@ -38,7 +38,7 @@ bubblechart.propTypes = {
   };
   
 bubblechart.defaultProps = {
-    titre:"scatterplot",
+    titre:"bubblechart",
     xx:[1,1,1,1],
     yy:[2,2,2,2], 
 };
