@@ -1,6 +1,4 @@
-import { barchart } from './barchart';
-import { linechart } from './linechart';
-
+import { barchart } from '../composants/barchart'
 export default {
   title: 'Example/charts/barchart',
   component: barchart,

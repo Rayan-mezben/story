@@ -1,5 +1,4 @@
-import { Gaugeplot } from './gaugeplot';
-import { linechart } from './linechart';
+import { Gaugeplot } from '../composants/gaugeplot';
 
 export default {
   title: 'Example/charts/Gaugeplot',

@@ -1,4 +1,4 @@
-import { linechart } from './linechart';
+import { linechart } from '../composants/linechart';
 
 export default {
   title: 'Example/charts/linechart',
