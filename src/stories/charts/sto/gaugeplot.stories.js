@@ -6,11 +6,26 @@ export default {
 
 };
 
-export const first_cas = {
+export const first_case = {
   args: {
-    val: [330,450,120],
-    sh:"angular",
-    titre: "gauge",
+    valeur: 50,
+    shape:"angular",
+    title: "Speedometre",
   },
 };
 
+export const second_case = {
+  args: {
+    valeur: 130,
+    shape:"angular",
+    title: "Speedometre",
+  },
+};
+
+export const third_case = {
+  args: {
+    valeur: 210,
+    shape:"angular",
+    title: "Speedometre",
+  },
+};

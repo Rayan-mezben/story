@@ -7,8 +7,8 @@ export default {
 
 export const first_case = {
     args: {
-      xx:["nissan gtr","porsch cayenne","mazda rx7" ],
-      yy:[87,65,94],
+      x:["nissan gtr","porsch","mazda rx7" ],
+      y:[87,65,94],
     },
   };
 

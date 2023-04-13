@@ -7,14 +7,15 @@ export default {
 };
 const randomArr = Array.from({length: 100}, () => Math.random() * 10)
 const randomArr2 = Array.from({length: 100}, () => Math.random() * 10)
-const randomArr3 = Array.from({length: 100}, () => Math.random() * 50)
+const randomArr3 = Array.from({length: 100}, () => Math.random() * 40)
 
 
 export const first_case = {
   args: {
-    xx: randomArr,
-    yy: randomArr2,
-    taille:randomArr3
+    titre:"bubblechart",
+    x: randomArr,
+    y: randomArr2,
+    size:randomArr3
 
   },
 };
